@@ -1,8 +1,8 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getFinancial } from '../redux/CompanyFinancialSlice';
 import Company from '../components/singlecompany';
+import Header from './Navbar';
 
 const CompanyFinancial = () => {
   const { financialstats } = useSelector((state) => state.finance);
@@ -13,6 +13,7 @@ const CompanyFinancial = () => {
 
   return (
     <>
+      <Header />
       {financialstats.map((comp) => (
         <Company
           key={comp.id}

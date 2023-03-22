@@ -1,9 +1,8 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router';
 import { getFinancial } from '../redux/CompanyFinancialSlice';
 import CompanyDetails from '../components/FinancialDetails';
-import { useParams } from 'react-router';
 
 const CompanyFinancialDetails = () => {
   const { financialstats } = useSelector((state) => state.finance);
@@ -13,9 +12,7 @@ const CompanyFinancialDetails = () => {
   }, [dispatch]);
 
   const { id } = useParams();
-  const financialstat = financialstats.find((comp) => {
-    return comp.id === id;
-  });
+  const financialstat = financialstats.find((comp) => comp.id === id);
 
   return (
     <>

@@ -1,26 +1,53 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { FaHandPointRight } from 'react-icons/fa';
+import { DiApple } from 'react-icons/di';
 
-const Company = ({companySymbol,
-    id,
-    reportedCurrency,
-    calendarYear}) => {
-return (
-    <div className='container'>
-       <div className="financialStatement">
-       <p className="year"> Reported year: {calendarYear}</p>
-       <p>Company symbol: {companySymbol}</p>
-       <p>Reported currency: {reportedCurrency}</p>
-       <button className="detailbutton"> <NavLink
-            className="nav-link"
-            style={({ isActive }) => (isActive
-              ? { textDecoration: 'underline' }
-              : { textDecoration: 'none' })}
-            to={`/details/${id}`}>
-           Check Details
-          </NavLink></button>
-          </div>
+const Company = ({
+  companySymbol,
+  id,
+  reportedCurrency,
+  calendarYear,
+}) => (
+  <div id={`container${calendarYear}`} className="container">
+    <div className="financialStatement">
+      <p className="year">
+        {' '}
+        <DiApple color="white" />
+        {' '}
+        Reported year:
+        {' '}
+        {calendarYear}
+      </p>
+      <p>
+        Company symbol:
+        {companySymbol}
+      </p>
+      <p>
+        Reported currency:
+        {reportedCurrency}
+      </p>
+      <NavLink
+        className="checkLink"
+        style={({ isActive }) => (isActive
+          ? { textDecoration: 'underline' }
+          : { textDecoration: 'none' })}
+        to={`/details/${id}`}
+      >
+        Check Details
+        {' '}
+        <FaHandPointRight color="black" />
+      </NavLink>
     </div>
-)}
- 
-export default Company ;
+  </div>
+);
+
+Company.propTypes = {
+  companySymbol: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  reportedCurrency: PropTypes.string.isRequired,
+  calendarYear: PropTypes.bool.isRequired,
+};
+
+export default Company;

@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import financialstatsReducer from './CompanyFinancialSlice'
+import financialstatsReducer from './CompanyFinancialSlice';
 
 const store = configureStore({
-    reducer: {
-      finance: financialstatsReducer,
-    },
-  });
-  
-  export default store;
+  reducer: {
+    finance: financialstatsReducer,
+  },
+});
+
+export default store;
