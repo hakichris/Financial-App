@@ -57,6 +57,10 @@
 
 - [live demo](https://snazzy-biscotti-b2bc39.netlify.app/)
 
+## 🚀 Video presentation<a name="video presentation"></a>
+
+- [video presentation](https://www.loom.com/share/103d2301c1394caeacb3a1fbe4694b98)
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
