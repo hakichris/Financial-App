@@ -4,23 +4,27 @@
   width: 414px;
   border: 2px solid black;
   border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'container1 container2'
+    'container3 container4';
+  background-color: white;
 }
 
 .header {
   font-family: 'Montserrat', sans-serif;
-  background-color: #d2691e;
+  background-color: #c36;
   color: white;
   border-radius: 5px 5px 0 0;
+  grid-area: header;
 }
 
 .container {
-  border-radius: 5px;
-  border: 1px solid black;
-  margin: 15px 15px 15px 15px;
-  padding: 10px;
   font-family: 'RobotoSlab', sans-serif;
   font-stretch: normal;
   font-style: normal;
+  padding: 5px;
   line-height: normal;
   transition: 0.5s;
 }
@@ -72,7 +76,7 @@ h2 {
 }
 
 .checkLink {
-  margin-left: 64%;
+  margin-left: 35%;
   border: 1px solid;
   border-radius: 10px;
   padding: 3px;
@@ -80,28 +84,27 @@ h2 {
 }
 
 #container2022 {
-  background-color: #d2691e;
+  background-color: #d14775;
   color: white;
+  grid-area: container1;
 }
 
 #container2021 {
-  background-color: #d2691e;
+  background-color: #d65c85;
   color: white;
+  grid-area: container2;
 }
 
 #container2020 {
-  background-color: #d2691e;
+  background-color: #d65c85;
   color: white;
+  grid-area: container3;
 }
 
 #container2019 {
-  background-color: #d2691e;
+  background-color: #d14775;
   color: white;
-}
-
-#container2018 {
-  background-color: #d2691e;
-  color: white;
+  grid-area: container4;
 }
 
 .Details {
@@ -113,4 +116,10 @@ h2 {
 
 .nav-link {
   padding-top: 20px;
+}
+
+.detailcontainer {
+  width: 405px;
+  padding: 5px;
+  border-radius: 5px;
 }
