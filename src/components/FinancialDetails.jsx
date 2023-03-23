@@ -17,7 +17,7 @@ const CompanyDetails = ({
 }) => (
 
   <div id={`container${calendarYear}`} className="detailcontainer">
-    <div className="Home">
+    <div className="head">
       {' '}
       <NavLink
         className="nav-link"
@@ -50,36 +50,45 @@ const CompanyDetails = ({
     </div>
 
     <div className="Details">
-      <p>
-        Net Income:
+      <p className="Income flex">
+        Net Income
         {' '}
-        {netIncome}
-        {' '}
-        <GiCash color="black" />
+        <div>
+          {' '}
+          {netIncome}
+          {' '}
+          <GiCash color="black" />
+        </div>
       </p>
-      <p>
-        Revenue:
+      <p className="revenue flex">
+        Revenue
         {' '}
-        {revenue}
-        {' '}
-        <GiCash color="black" />
+        <div>
+          {' '}
+          {revenue}
+          {' '}
+          <GiCash color="black" />
+        </div>
       </p>
-      <p>
-        Cost of Revenue:
+      <p className="cost flex">
+        Cost of Revenue
         {' '}
-        {costOfRevenue}
-        {' '}
-        <GiCash color="black" />
+        <div>
+          {costOfRevenue}
+          {' '}
+          <GiCash color="black" />
+        </div>
       </p>
-      <p>
-        GrossProfit:
+      <p className="profit flex">
+        GrossProfit
         {' '}
-        {grossProfit}
-        {' '}
-        <GiCash color="black" />
-        {' '}
+        <div>
+          {grossProfit}
+          {' '}
+          <GiCash color="black" />
+        </div>
       </p>
-      <a href={finalLink}>Check Link to this data</a>
+      <p className="link flex"><a href={finalLink}>Check Link to this data</a></p>
     </div>
   </div>
 );
