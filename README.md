@@ -127,7 +127,7 @@ If you like this project star it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse.org
+I would like to thank Microverse.org and Nelson Sakwa. a very big thank you. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
