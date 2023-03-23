@@ -69,7 +69,7 @@ To get this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/ambrose-kibet/Space-Travelers-hub-Group-project.git
+  git clone https://github.com/hakichris/React-Capstone-Project.git
 ```
 
 ### Running the app
@@ -84,12 +84,6 @@ To get app running:
 - <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-👤 **Author1**
-
-- GitHub: [@ambrose-kibet](https://github.com/ambrose-kibet)
-- Twitter: [@ambrose_kibet](https://twitter.com/ambrose_kibet)
-- LinkedIn: [ambrose-kibet](https://www.linkedin.com/in/ambrose-kibet-56a791122/)
 
 👤 **Christian Hakizimana**
 
@@ -113,7 +107,7 @@ To get app running:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/hakichris/React-Capstone-Project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

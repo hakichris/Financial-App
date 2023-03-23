@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
+import { MemoryRouter } from 'react-router';
 import CompanyFinancial from '../pages/CompanyFinancial';
 import financialstatsReducer from '../redux/CompanyFinancialSlice';
-import { MemoryRouter } from 'react-router';
 
 const preloadedState = {
   finance: {
@@ -33,10 +33,10 @@ const store = configureStore({
 
 describe('CompanyFinancial component', () => {
   it('renders CompanyFinancial correctly', () => {
-    const { getByText } = render(
+    render(
       <Provider store={store}>
         <MemoryRouter>
-        <CompanyFinancial />
+          <CompanyFinancial />
         </MemoryRouter>
       </Provider>,
     );
