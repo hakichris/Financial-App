@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const url = 'https://financialmodelingprep.com/api/v3/income-statement/AAPL?limit=5&apikey=6b664f4871a93fb215675c7d0d2244be';
+const url = 'https://financialmodelingprep.com/api/v3/income-statement/AAPL?limit=4&apikey=6b664f4871a93fb215675c7d0d2244be';
 
 export const getFinancial = createAsyncThunk(
   'company/getCompanystats',
