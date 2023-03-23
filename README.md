@@ -4,7 +4,7 @@
 
   <br/>
 
-  <h3><b> Space Travellers' Hub </b></h3>
+  <h3><b> React redux Captsone Project </b></h3>
 
 </div>
 
@@ -30,7 +30,7 @@
 
 # 📖 Space Travellers' Hub<a name="about-project"></a>
 
-**Space Travellers' Hub** Is a web application built with react and redux and spaceXAPI. Users can view rockets and missions and create resrvations.
+**React redux captsone** Is a mobile web application built with react and redux and financial statement API. Users can view financial statement of Apple.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,9 +48,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Rockets**
-- **Missions**
-- **Profile**
+- **Apple financial statement data**
+- **financial statement 2022**
+- **financial statement 2020**
+**financial statement 2019**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 

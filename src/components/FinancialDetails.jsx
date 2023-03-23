@@ -45,7 +45,6 @@ const CompanyDetails = ({
           {reportedCurrency}
         </p>
       </div>
-
     </div>
 
     <div className="Details">
@@ -80,14 +79,25 @@ const CompanyDetails = ({
 );
 
 CompanyDetails.propTypes = {
-  companySymbol: PropTypes.string.isRequired,
-  reportedCurrency: PropTypes.string.isRequired,
-  calendarYear: PropTypes.string.isRequired,
-  finalLink: PropTypes.string.isRequired,
-  netIncome: PropTypes.number.isRequired,
-  revenue: PropTypes.number.isRequired,
-  costOfRevenue: PropTypes.number.isRequired,
-  grossProfit: PropTypes.number.isRequired,
+  companySymbol: PropTypes.string,
+  reportedCurrency: PropTypes.string,
+  calendarYear: PropTypes.string,
+  finalLink: PropTypes.string,
+  netIncome: PropTypes.number,
+  revenue: PropTypes.number,
+  costOfRevenue: PropTypes.number,
+  grossProfit: PropTypes.number,
+};
+
+CompanyDetails.defaultProps = {
+  companySymbol: 'dkfj',
+  reportedCurrency: 'slfk',
+  calendarYear: 'dfkn',
+  finalLink: 'lfkng',
+  netIncome: 235,
+  revenue: 235,
+  costOfRevenue: 234,
+  grossProfit: 456,
 };
 
 export default CompanyDetails;
