@@ -11,7 +11,6 @@ const Company = ({
   calendarYear,
   netIncome,
 }) => (
- <div className="maincontainer">
   <div id={`container${calendarYear}`} className="container">
     <div className="financialStatement">
       <p className="year">
@@ -50,7 +49,6 @@ const Company = ({
         <FaHandPointRight color="black" />
       </NavLink>
     </div>
-   </div>
   </div>
 );
 
