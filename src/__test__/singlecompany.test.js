@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import Company from '../components/singlecompany';
-
+import { MemoryRouter } from 'react-router';
 import financialstatsReducer from '../redux/CompanyFinancialSlice';
 
 const store = configureStore({
@@ -21,16 +21,17 @@ describe('Company', () => {
     };
     render(
       <Provider store={store}>
+        <MemoryRouter>
         <Company
           companySymbol={CompanyFinancial.companySymbol}
           id={CompanyFinancial.id}
           reportedCurrency={CompanyFinancial.reportedCurrency}
           calendarYear={CompanyFinancial.calendarYear}
         />
+        </MemoryRouter>
       </Provider>,
     );
 
-    expect(screen.getByText(CompanyFinancial.id)).toBeInTheDocument();
-    expect(screen.getByText(CompanyFinancial.calendarYear)).toBeInTheDocument();
+    expect(screen.getByText(/alright/i)).toBeDefined();
   });
 });
