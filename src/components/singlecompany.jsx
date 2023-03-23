@@ -12,7 +12,13 @@ const Company = ({
   netIncome,
 }) => (
   <div id={`container${calendarYear}`} className="container">
-    <div className="financialStatement">
+    <NavLink
+      className="checkLink"
+      style={({ isActive }) => (isActive
+        ? { textDecoration: 'underline' }
+        : { textDecoration: 'none' })}
+      to={`/details/${id}`}
+    >
       <p className="year">
         {' '}
         <DiApple color="white" />
@@ -36,19 +42,9 @@ const Company = ({
         {' '}
         {netIncome}
       </p>
-
-      <NavLink
-        className="checkLink"
-        style={({ isActive }) => (isActive
-          ? { textDecoration: 'underline' }
-          : { textDecoration: 'none' })}
-        to={`/details/${id}`}
-      >
-        Check Details
-        {' '}
-        <FaHandPointRight color="black" />
-      </NavLink>
-    </div>
+      {' '}
+      <FaHandPointRight color="black" />
+    </NavLink>
   </div>
 );
 
