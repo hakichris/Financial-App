@@ -55,7 +55,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link coming soon]()
+- [live demo](https://snazzy-biscotti-b2bc39.netlify.app/)
 
 <!-- GETTING STARTED -->
 
