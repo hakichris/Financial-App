@@ -52,25 +52,25 @@ const CompanyDetails = ({
         Net Income:
         {netIncome}
         {' '}
-        <GiCash color="#0b4513" />
+        <GiCash color="black" />
       </p>
       <p>
         Revenue:
         {revenue}
         {' '}
-        <GiCash color="#0b4513" />
+        <GiCash color="black" />
       </p>
       <p>
         Cost of Revenue:
         {costOfRevenue}
         {' '}
-        <GiCash color="#0b4513" />
+        <GiCash color="black" />
       </p>
       <p>
         GrossProfit:
         {grossProfit}
         {' '}
-        <GiCash color="#0b4513" />
+        <GiCash color="black" />
         {' '}
       </p>
       <a href={finalLink}>Check Link to this data</a>
