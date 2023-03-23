@@ -13,7 +13,7 @@
 }
 
 .header {
-  font-family: 'Gill Sans', sans-serif;;
+  font-family: 'Gill Sans', sans-serif;
   background-color: #c36;
   color: white;
   border-radius: 5px 5px 0 0;
@@ -21,7 +21,7 @@
 }
 
 .container {
-  font-family:'Gill Sans', sans-serif;
+  font-family: 'Gill Sans', sans-serif;
   font-stretch: normal;
   font-style: normal;
   padding: 5px;
@@ -63,7 +63,7 @@ h2 {
   text-align: center;
   margin: 10px;
   font-size: 1rem;
-  font-family: 'Gill Sans', sans-serif;;
+  font-family: 'Gill Sans', sans-serif;
 }
 
 .calendar,
@@ -76,7 +76,7 @@ h2 {
 }
 
 .checkLink {
- color: white;
+  color: white;
 }
 
 #container2022 {
@@ -113,6 +113,7 @@ h2 {
 
 .detailcontainer {
   width: 414px;
+
   /* padding-top: 5px; */
   border-radius: 10px;
 }
@@ -143,10 +144,10 @@ h2 {
 }
 
 .revenue {
-background-color: #d14775;
-margin: 0;
-height: 50px;
-padding: 0 10px 0 10px;
+  background-color: #d14775;
+  margin: 0;
+  height: 50px;
+  padding: 0 10px 0 10px;
 }
 
 .Income {
