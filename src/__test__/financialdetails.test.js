@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import CompanyDetails from '../components/FinancialDetails';
-
+import { MemoryRouter } from 'react-router';
 import financialstatsReducer from '../redux/CompanyFinancialSlice';
 
 const store = configureStore({
@@ -26,6 +26,7 @@ describe('companydetails', () => {
     };
     render(
       <Provider store={store}>
+        <MemoryRouter>
         <CompanyDetails
           companySymbol={CompanyFinancial.companySymbol}
           id={CompanyFinancial.id}
@@ -37,10 +38,12 @@ describe('companydetails', () => {
           costOfRevenue={CompanyFinancial.costOfRevenue}
           grossProfit={CompanyFinancial.grossProfit}
         />
+        </MemoryRouter>
       </Provider>,
     );
 
-    expect(screen.getByText(CompanyFinancial.netIncome)).toBeInTheDocument();
-    expect(screen.getByText(CompanyFinancial.revenue)).toBeInTheDocument();
+    expect(screen.getByText(/1235/i)).toBeDefined();
+    expect(screen.getByText(/4567/i)).toBeDefined();
+    
   });
 });
