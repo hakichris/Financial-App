@@ -16,7 +16,7 @@ const CompanyDetails = ({
   grossProfit,
 }) => (
 
-  <div id={`container${calendarYear}`} className="container">
+  <div id={`container${calendarYear}`} className="detailcontainer">
     <div className="Home">
       {' '}
       <NavLink
