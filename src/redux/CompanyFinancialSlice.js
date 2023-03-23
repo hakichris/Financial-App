@@ -17,12 +17,19 @@ export const getFinancial = createAsyncThunk(
 
 const initialState = {
   financialstats: [],
+  searchParameters: '',
 };
 
 const CompanyFinancial = createSlice({
   name: 'financialstats',
   initialState,
-  reducers: { },
+  reducers: { 
+    filterCalendar: (state, { payload }) => {
+      const newItemArr = state.financialstats.filter((item) => item.calendarYear.includes(payload.toLowerCase()));
+      return { ...state, financialstats: newItemArr };
+    },
+    updateSearch: (state, { payload }) => ({ ...state, searchParameters: payload }),
+  },
   extraReducers: (builder) => {
     builder.addCase(getFinancial.fulfilled, (state, { payload }) => {
       if (!state.financialstats.length) {
@@ -49,4 +56,5 @@ const CompanyFinancial = createSlice({
   },
 });
 
+export const {filterCalendar, updateSearch } = CompanyFinancial.actions;
 export default CompanyFinancial.reducer;
