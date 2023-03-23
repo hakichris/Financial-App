@@ -29,7 +29,7 @@ const CompanyFinancial = createSlice({
         const newstats = payload.map(
           ({
             symbol: companySymbol, date: id, finalLink, reportedCurrency, netIncome,
-            revenue, calendarYear, costOfRevenue, grossProfit, grossProfitRatio,
+            revenue, calendarYear, costOfRevenue, grossProfit,
           }) => ({
             companySymbol,
             id,
@@ -40,7 +40,6 @@ const CompanyFinancial = createSlice({
             calendarYear,
             costOfRevenue,
             grossProfit,
-            grossProfitRatio,
           }),
         );
         return { ...state, financialstats: newstats };

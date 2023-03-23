@@ -19,13 +19,9 @@ const CompanyFinancial = () => {
           key={comp.id}
           id={comp.id}
           companySymbol={comp.companySymbol}
-          finalLink={comp.finalLink}
           reportedCurrency={comp.reportedCurrency}
-          netIncome={comp.netIncome}
-          revenue={comp.revenue}
           calendarYear={comp.calendarYear}
-          costOfRevenue={comp.costOfRevenue}
-          grossProfit={comp.grossProfit}
+          netIncome={comp.netIncome}
         />
       ))}
     </>

@@ -9,6 +9,7 @@ const Company = ({
   id,
   reportedCurrency,
   calendarYear,
+  netIncome,
 }) => (
   <div id={`container${calendarYear}`} className="container">
     <div className="financialStatement">
@@ -22,12 +23,20 @@ const Company = ({
       </p>
       <p>
         Company symbol:
+        {' '}
         {companySymbol}
       </p>
       <p>
         Reported currency:
+        {' '}
         {reportedCurrency}
       </p>
+      <p>
+        Net Income:
+        {' '}
+        {netIncome}
+      </p>
+
       <NavLink
         className="checkLink"
         style={({ isActive }) => (isActive
@@ -47,7 +56,8 @@ Company.propTypes = {
   companySymbol: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   reportedCurrency: PropTypes.string.isRequired,
-  calendarYear: PropTypes.bool.isRequired,
+  calendarYear: PropTypes.string.isRequired,
+  netIncome: PropTypes.number.isRequired,
 };
 
 export default Company;

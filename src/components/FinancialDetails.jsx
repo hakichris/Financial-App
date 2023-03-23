@@ -82,12 +82,12 @@ const CompanyDetails = ({
 CompanyDetails.propTypes = {
   companySymbol: PropTypes.string.isRequired,
   reportedCurrency: PropTypes.string.isRequired,
-  calendarYear: PropTypes.bool.isRequired,
-  finalLink: PropTypes.bool.isRequired,
-  netIncome: PropTypes.bool.isRequired,
-  revenue: PropTypes.bool.isRequired,
-  costOfRevenue: PropTypes.bool.isRequired,
-  grossProfit: PropTypes.bool.isRequired,
+  calendarYear: PropTypes.string.isRequired,
+  finalLink: PropTypes.string.isRequired,
+  netIncome: PropTypes.number.isRequired,
+  revenue: PropTypes.number.isRequired,
+  costOfRevenue: PropTypes.number.isRequired,
+  grossProfit: PropTypes.number.isRequired,
 };
 
 export default CompanyDetails;
