@@ -38,10 +38,12 @@ const CompanyDetails = ({
         </h1>
         <p className="year">
           Apple Financial statement
+          {' '}
           {calendarYear}
         </p>
         <p className="currency">
           Reported Currency:
+          {' '}
           {reportedCurrency}
         </p>
       </div>
@@ -50,24 +52,28 @@ const CompanyDetails = ({
     <div className="Details">
       <p>
         Net Income:
+        {' '}
         {netIncome}
         {' '}
         <GiCash color="black" />
       </p>
       <p>
         Revenue:
+        {' '}
         {revenue}
         {' '}
         <GiCash color="black" />
       </p>
       <p>
         Cost of Revenue:
+        {' '}
         {costOfRevenue}
         {' '}
         <GiCash color="black" />
       </p>
       <p>
         GrossProfit:
+        {' '}
         {grossProfit}
         {' '}
         <GiCash color="black" />
