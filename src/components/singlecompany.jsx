@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import { FaHandPointRight } from 'react-icons/fa';
+import { BiRightArrowCircle } from 'react-icons/bi';
 import { DiApple } from 'react-icons/di';
 
 const Company = ({
@@ -19,11 +19,10 @@ const Company = ({
         : { textDecoration: 'none' })}
       to={`/details/${id}`}
     >
+      <BiRightArrowCircle color="white" className="arrow" />
       <p className="year">
         {' '}
         <DiApple color="white" />
-        {' '}
-        Reported year:
         {' '}
         {calendarYear}
       </p>
@@ -43,7 +42,6 @@ const Company = ({
         {netIncome}
       </p>
       {' '}
-      <FaHandPointRight color="black" />
     </NavLink>
   </div>
 );

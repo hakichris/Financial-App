@@ -23,38 +23,37 @@ const initialState = {
 const CompanyFinancial = createSlice({
   name: 'financialstats',
   initialState,
-  reducers: { 
-    filterCalendar: (state, { payload }) => {
-      const newItemArr = state.financialstats.filter((item) => item.calendarYear.includes(payload.toLowerCase()));
+  reducers: {
+    filterCalendar: (state) => {
+      const newItemArr = state.financialstats.filter(
+        (item) => item.calendarYear.includes(state.searchParameters),
+      );
       return { ...state, financialstats: newItemArr };
     },
     updateSearch: (state, { payload }) => ({ ...state, searchParameters: payload }),
   },
   extraReducers: (builder) => {
     builder.addCase(getFinancial.fulfilled, (state, { payload }) => {
-      if (!state.financialstats.length) {
-        const newstats = payload.map(
-          ({
-            symbol: companySymbol, date: id, finalLink, reportedCurrency, netIncome,
-            revenue, calendarYear, costOfRevenue, grossProfit,
-          }) => ({
-            companySymbol,
-            id,
-            finalLink,
-            reportedCurrency,
-            netIncome,
-            revenue,
-            calendarYear,
-            costOfRevenue,
-            grossProfit,
-          }),
-        );
-        return { ...state, financialstats: newstats };
-      }
-      return { ...state };
+      const newstats = payload.map(
+        ({
+          symbol: companySymbol, date: id, finalLink, reportedCurrency, netIncome,
+          revenue, calendarYear, costOfRevenue, grossProfit,
+        }) => ({
+          companySymbol,
+          id,
+          finalLink,
+          reportedCurrency,
+          netIncome,
+          revenue,
+          calendarYear,
+          costOfRevenue,
+          grossProfit,
+        }),
+      );
+      return { ...state, financialstats: newstats };
     });
   },
 });
 
-export const {filterCalendar, updateSearch } = CompanyFinancial.actions;
+export const { filterCalendar, updateSearch } = CompanyFinancial.actions;
 export default CompanyFinancial.reducer;
