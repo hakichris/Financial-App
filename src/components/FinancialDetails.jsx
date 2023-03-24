@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { FaReply } from 'react-icons/fa';
 import { DiApple } from 'react-icons/di';
-import { GiCash } from 'react-icons/gi';
+import { BiRightArrowCircle } from 'react-icons/bi';
 
 const CompanyDetails = ({
   companySymbol,
@@ -53,39 +53,39 @@ const CompanyDetails = ({
       <p className="Income flex">
         Net Income
         {' '}
-        <div>
+        <div className="flex">
           {' '}
           {netIncome}
           {' '}
-          <GiCash color="black" />
+          <BiRightArrowCircle color="white" />
         </div>
       </p>
       <p className="revenue flex">
         Revenue
         {' '}
-        <div>
+        <div className="flex">
           {' '}
           {revenue}
           {' '}
-          <GiCash color="black" />
+          <BiRightArrowCircle color="white" />
         </div>
       </p>
       <p className="cost flex">
         Cost of Revenue
         {' '}
-        <div>
+        <div className="flex">
           {costOfRevenue}
           {' '}
-          <GiCash color="black" />
+          <BiRightArrowCircle color="white" />
         </div>
       </p>
       <p className="profit flex">
         GrossProfit
         {' '}
-        <div>
+        <div className="flex">
           {grossProfit}
           {' '}
-          <GiCash color="black" />
+          <BiRightArrowCircle color="white" />
         </div>
       </p>
       <p className="link flex"><a href={finalLink}>Check Link to this data</a></p>
