@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:wght@300;400;500&family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@200;300;400;500&display=swap');
+
+#root {
+  width: 414px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'container1 container2'
+    'container3 container4';
+  background-color: white;
+}
+
+.header {
+  font-family: 'Gill Sans', sans-serif;
+  background-color: #c36;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  grid-area: header;
+}
+
+.container {
+  font-family: 'Gill Sans', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  padding: 5px;
+  line-height: normal;
+  transition: 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.calendar {
+  padding-bottom: 10px;
+}
+
+.year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+img {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.logoName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 2px 2px 20px;
+}
+
+h2 {
+  display: flex;
+  text-align: center;
+  margin: 10px;
+  font-size: 1rem;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.calendar,
+.name,
+.currency {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.checkLink {
+  color: white;
+}
+
+#container2022 {
+  background-color: #d14775;
+  color: white;
+  grid-area: container1;
+}
+
+#container2021 {
+  background-color: #d65c85;
+  color: white;
+  grid-area: container2;
+}
+
+#container2020 {
+  background-color: #d65c85;
+  color: white;
+  grid-area: container3;
+}
+
+#container2019 {
+  background-color: #d14775;
+  color: white;
+  grid-area: container4;
+}
+
+.Details {
+  color: white;
+}
+
+.nav-link {
+  padding-top: 20px;
+}
+
+.detailcontainer {
+  width: 414px;
+
+  /* padding-top: 5px; */
+  border-radius: 10px;
+}
+
+.head {
+  background-color: #d14775;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.profit {
+  background-color: #d14775;
+  margin: 0;
+  height: 50px;
+  padding: 0 10px 0 10px;
+}
+
+.cost {
+  background-color: #d65c85;
+  margin: 0;
+  height: 50px;
+  padding: 0 10px 0 10px;
+}
+
+.revenue {
+  background-color: #d14775;
+  margin: 0;
+  height: 50px;
+  padding: 0 10px 0 10px;
+}
+
+.Income {
+  background-color: #d65c85;
+  margin: 0;
+  height: 50px;
+  padding: 0 10px 0 10px;
+}
+
+.link {
+  height: 50px;
+  margin: 0;
+  padding: 0 10px 0 10px;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 90%;
+}
